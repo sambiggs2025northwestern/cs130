@@ -22,16 +22,19 @@ p, li {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 #homework {
     background-color: #0f7fa8;
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 #tutorials {
-    background-color: #7f0ca6;
+    background-color: #cdc6cf;
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 #lectures {
     background-color: #af164e;
     padding-top: 40px;
