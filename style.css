@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 * {
-    box-shadow: inset;
+    box-shadow: inset 2;
 }
 
 body {
