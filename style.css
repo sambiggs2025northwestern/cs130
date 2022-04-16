@@ -21,26 +21,26 @@ p, li {
     background-color: #1cd29e;
     padding-top: 40px;
     padding-bottom: 40px;
-    border: #af164e;
+    border: #af164e 3px
 }
 
 #homework {
     background-color: #0f7fa8;
     padding-top: 40px;
     padding-bottom: 40px;
-    border: #1cd29e;
+    border: #1cd29e 3px
 }
 
 #tutorials {
     background-color: #cdc6cf;
     padding-top: 40px;
     padding-bottom: 40px;
-    border: #0f7fa8;
+    border: #0f7fa8 3px
 }
 
 #lectures {
     background-color: #af164e;
     padding-top: 40px;
     padding-bottom: 40px;
-   border: #cdc6cf;
+   border: #cdc6cf 3px
 }
