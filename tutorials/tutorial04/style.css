@@ -1,16 +1,24 @@
 .container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 1fr 2fr 1fr;
+   grid-template-rows: 0.5fr 1fr 1fr;
    grid-template-areas: 
    "menu1 . menu2 menu2" 
    "card1 card2 card3 aside"
    "main main main aside";
    min-height: 100vh;
+   row-gap: 20px;
+   column-gap: 20px;
+}
+
+.container > section, .container > aside, .container > article, main {
+   border: solid 1px black;
 }
 
 .container .menu1{
    grid-area: menu1;
+   background-color: rgb(36, 204, 204);
+   box-shadow: 60px -2px rgb(37, 90, 90);
 }
 
 .container .menu2{
@@ -21,23 +29,19 @@
    grid-area: card1;
 }
 .container .card2 {
-   grid-area: card2
+   grid-area: card2;
 }
 
 .container .card3 {
-   grid-area: card3
+   grid-area: card3;
 }
 
 .container .aside {
-   grid-area: aside
-}
-
-.container .sidebar {
-   grid-area: sidebar
+   grid-area: aside;
 }
 
 .container .main {
-   grid-area: main
+   grid-area: main;
 }
 
 
@@ -45,6 +49,7 @@
    .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.5fr 0.5fr 2fr 1fr 0.5fr;
       grid-template-areas: 
       "menu1 menu2" 
       "aside aside"
@@ -55,17 +60,17 @@
    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
    .container {
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 0.5fr 2fr 2fr 2fr 2fr 2fr;
       grid-template-areas: 
       "menu1"
       "menu2" 
       "aside"
       "card1"
       "card2"
-      "card3"
       "card3"
       "main";
       min-height: 100vh;
