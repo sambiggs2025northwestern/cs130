@@ -18,30 +18,36 @@
 .container .menu1{
    grid-area: menu1;
    background-color: rgb(36, 204, 204);
-   box-shadow: 60px -2px rgb(37, 90, 90);
+   box-shadow: 2px -2px rgb(37, 90, 90);
 }
 
 .container .menu2{
    grid-area: menu2;
+   background-color: rgb(204, 103, 36);
 }
 
 .container .card1 {
    grid-area: card1;
+   background-color: rgb(36, 204, 145);
 }
 .container .card2 {
    grid-area: card2;
+   background-color: rgb(36, 204, 145);
 }
 
 .container .card3 {
    grid-area: card3;
+   background-color: rgb(36, 204, 145);
 }
 
 .container .aside {
    grid-area: aside;
+   background-color: rgb(36, 123, 204);
 }
 
 .container .main {
    grid-area: main;
+   background-color: rgb(36, 204, 145);
 }
 
 
