@@ -89,6 +89,14 @@ header #upgrade {
     border-radius: 15px;
     padding: 5px;
     box-shadow: #222;
+    background-color: rgb(23, 23, 23);
+}
+
+header #profile { 
+    border: transparent;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: #222;
     background-color: rgb(49, 49, 49);
 }
 
@@ -115,7 +123,11 @@ header #upgrade {
 header a {
     margin-right: 20px;
     margin-top: 20px;
+
 }
+
+header a:hover {color: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 5px rgba(145, 92, 182, .4);}
 
 nav a { 
     display: flex;

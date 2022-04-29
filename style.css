@@ -47,6 +47,9 @@ p, li {
     background-color: rgb(174, 31, 31);
     padding-top: 40px;
     padding-bottom: 40px;
+    /* background-image: image-set("https://secure.img1-fg.wfcdn.com/im/30200604/resize-h755-w755%5Ecompr-r85/2889/28897726/Sallah+33%27+x+20.5%22+Textured+Wallpaper+Roll.jpg");
+    background-size: cover;
+    background-repeat: repeat-y; */
 }
 
 body a:hover{ border: 2px solid rgb(255, 255, 255);
