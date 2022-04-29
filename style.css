@@ -5,6 +5,8 @@
 * {
     box-shadow: inset 2;
 }
+html {background-color: #acdbf3;}
+
 
 body {
     margin: 5px;
