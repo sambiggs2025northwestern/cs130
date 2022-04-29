@@ -9,6 +9,7 @@
 body {
     margin: 5px;
     font-family: Arial, sans-serif;
+    line-height: 30px;
 }
 header, section {
     padding: 25px;
@@ -46,3 +47,9 @@ p, li {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
+body a:hover{ border: 2px solid rgb(255, 255, 255);
+    border-radius: 20%;
+    margin: 5px;
+}
+
