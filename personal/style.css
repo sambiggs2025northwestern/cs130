@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+document, body {
+   margin: 0px;
+   font-family: 'Montserrat';
+}
+
+body * {
+   box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav {
+   display: flex;
+   justify-content: center;
+   height: 100%;
+}
+
+header {
+    align-items: center;
+    color: #555;
+    border-bottom: solid 1px #CCC;
+    background-color: #F2F2F2;
+    height: 100px;
+}
+nav {
+    height: 50px;
+    border-bottom: solid 1px #CCC;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: 0px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #666;
+    margin-right: 15px;
+    border: solid 1px;
+    border-radius: 30%;
+}
+
+#a1 {
+   font-size: 2em;
+}
+#a2 {
+   font-size: 1em;
+}
+
+.content {
+   padding: 40px;
+   font-size: 1.4em;
+   color: #666;
+   min-height: 100vh;
+}
+
+
+/******************/
+/* Custom Classes */
+/******************/
+
+.pink header {
+   background: #434a6c;
+   color: white;
+   font-family: 'Montserrat';
+}
+.pink button, .pink .content {
+    color: #434a6c;
+}
+.pink .content {
+   background: #99cccc;
+   line-height: 1.6em;
+}
+.pink header, .pink nav {
+    border-bottom: solid 1px #434a6c;
+}
+
+.red header {
+    background: black;
+    color: rgb(198, 34, 34);
+}
+.red .content {
+    background: white;
+    color: rgb(198, 34, 34);
+}
+.red header, .red nav {
+    border-bottom: solid 1px black;
+}
+.red header {
+    background: rgb(176, 28, 28);
+    color: rgb(255, 255, 255);
+    
+}
+.red button {
+    color: black;
+}
