@@ -28,6 +28,16 @@ header {
     background-color: #F2F2F2;
     height: 100px;
 }
+
+.selector {
+    text-align: left;
+    justify-content: left;
+    margin-right: 50px;
+    font-size: 150%;
+    margin-top: 10px;
+    font-weight: bold;
+} 
+
 nav {
     height: 50px;
     border-bottom: solid 1px #CCC;
@@ -63,6 +73,7 @@ button:hover {
    font-size: 1.4em;
    color: #666;
    min-height: 100vh;
+   line-height: 1.6em;
 }
 
 
@@ -74,6 +85,7 @@ button:hover {
    background: #ff06f7;
    color: white;
    font-family: 'Montserrat';
+   
 }
 .pink button {
     color: #6c4369;
@@ -119,4 +131,9 @@ button:hover {
 
 nav button {
     font-weight: 700;
+}
+
+.videoyoutube {
+    margin-top: 50px;
+    text-align: center;
 }
