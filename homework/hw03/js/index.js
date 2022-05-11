@@ -85,5 +85,16 @@ const next = () => {
     `url('${images[currentIndex]}')`;
 }
 
+const handleFeaturedImageClick = () => {
+    if (currentIndex < 7) {
+        currentIndex += 1;
+    } else {
+        currentIndex = 0;
+    }
+    console.log('Show next image', currentIndex);
+    document.querySelector('.featured_image').style.backgroundImage = 
+    `url('${images[currentIndex]}')`;
+}
+
 
 initScreen();
