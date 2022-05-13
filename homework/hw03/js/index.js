@@ -52,17 +52,6 @@ const handleThumbnailClick = ev => {
     currentIndex = Number(elem.getAttribute('data-index'));
 }
 
-// const showImage = (ev) => {
-//     const elem = ev.currentTarget;
-//     console.log(elem.style.backgroundImage);
-// };
-
-// const imageElements = document.querySelectorAll('.images');
-
-// for (const elem of imageElements) {
-//     elem.onclick = showImage;
-// }
-
 const previous = () => {
     if (currentIndex > 0) {
         currentIndex -= 1;
@@ -98,3 +87,14 @@ const handleFeaturedImageClick = () => {
 
 
 initScreen();
+
+// const showImage = (ev) => {
+//     const elem = ev.currentTarget;
+//     console.log(elem.style.backgroundImage);
+// };
+
+// const imageElements = document.querySelectorAll('.images');
+
+// for (const elem of imageElements) {
+//     elem.onclick = showImage;
+// }
