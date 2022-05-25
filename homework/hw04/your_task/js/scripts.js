@@ -54,7 +54,7 @@ const track2Html = (track) => {
     `;
 };
 
-//getTracks("The Kid LAROI");
+getTracks("The Kid LAROI");
 
 const getAlbums = (term) => {
   console.log(`
@@ -95,7 +95,7 @@ const Albums2Html = (album) => {
     </section>  `;
 };
 
-//getAlbums("The Kid LAROI")
+getAlbums("The Kid LAROI")
 
 const getArtist = (term) => {
   let url = `https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}`;
@@ -134,7 +134,7 @@ const artist2Html = (artist) => {
     </section>  `;
 };
 
-//getArtist("The Kid LAROI");
+getArtist("The Kid LAROI");
 
 const handleTrackClick = (ev) => {
   const previewUrl = ev.currentTarget.getAttribute("data-preview-track");
