@@ -474,3 +474,13 @@ h2 {
         max-width: calc((100vw - 250px) / 2);
     }
 }
+
+footer {
+    display: none;
+}
+
+.player {
+    margin-top: -60px;
+    margin-left: 250px;
+    max-width: 1000px;
+}

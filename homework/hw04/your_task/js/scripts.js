@@ -45,7 +45,7 @@ const track2Html = (track) => {
             <img src=${track.album.image_url}>
             <i class="fas play-track fa-play" aria-hidden="true"></i>
             <div class="label">
-                <h2>${track.album.name}</h2>
+                <h2>${track.name}</h2>
                 <p>
                  ${track.artist.name}
                 </p>
@@ -54,14 +54,48 @@ const track2Html = (track) => {
     `;
 };
 
-getTracks("pink gloyd");
+//getTracks("The Kid LAROI");
 
 const getAlbums = (term) => {
   console.log(`
         get albums from spotify based on the search term
         "${term}" and load them into the #albums section 
         of the DOM...`);
+        let url = `https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`;
+        const elem = document.querySelector('#albums');
+        elem.innerHTML = ''
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.length > 0) {
+              //   create a function that converts this data to html
+              for (item of data) {
+                let html = Albums2Html(item);
+                elem.innerHTML += html
+              }
+            } else {
+              let html = "<p>No albums found that match your search criteria. </p>";
+              document.querySelector("#albums").innerHTML = html;
+            }
+          });
 };
+
+const Albums2Html = (album) => {
+  return `
+    <section class="album-card" id=${album.id}>
+        <div>
+            <img src=${album.image_url}>
+            <h2>${album.name}</h2>
+            <div class="footer">
+                <a href=${album.spotify_url} target="_blank">
+                    view on spotify
+                </a>
+            </div>
+        </div>
+    </section>  `;
+};
+
+//getAlbums("The Kid LAROI")
 
 const getArtist = (term) => {
   let url = `https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}`;
@@ -100,12 +134,23 @@ const artist2Html = (artist) => {
     </section>  `;
 };
 
-getArtist("Lady gaga");
+//getArtist("The Kid LAROI");
 
 const handleTrackClick = (ev) => {
   const previewUrl = ev.currentTarget.getAttribute("data-preview-track");
   console.log(previewUrl);
+  audioPlayer.setAudioFile(previewUrl);
+  audioPlayer.play();
+  document.querySelector('footer .track-item').innerHTML = ev.currentTarget.innerHTML
+  var footers = document.getElementsByTagName('footer');
+  footers[0].style = 'display: block;';
 };
+
+// const updateTrack = (data) => {
+//   console.log("update the track");
+//   document.getElementById('current-track').innerHTML()
+//   // return <section class="track-item">`
+// };
 
 document.querySelector("#search").onkeyup = (ev) => {
   // Number 13 is the "Enter" key on the keyboard
