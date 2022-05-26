@@ -42,7 +42,7 @@ const getTracks = (term) => {
 const track2Html = (track) => {
   return `
     <button class="track-item preview" data-preview-track=${track.preview_url} onclick="handleTrackClick(event);">
-            <img src=${track.album.image_url}>
+            <img src=${track.album.image_url} alt="songimage">
             <i class="fas play-track fa-play" aria-hidden="true"></i>
             <div class="label">
                 <h2>${track.name}</h2>
@@ -84,7 +84,7 @@ const Albums2Html = (album) => {
   return `
     <section class="album-card" id=${album.id}>
         <div>
-            <img src=${album.image_url}>
+            <img src=${album.image_url} alt="albumimage">
             <h2>${album.name}</h2>
             <div class="footer">
                 <a href=${album.spotify_url} target="_blank">
@@ -123,7 +123,7 @@ const artist2Html = (artist) => {
   return `
     <section class="artist-card" id=${artist.id}>
         <div>
-            <img src=${artist.image_url}>
+            <img src=${artist.image_url} alt="artistimage">
             <h2>${artist.name}</h2>
             <div class="footer">
                 <a href=${artist.spotify_url} target="_blank">
