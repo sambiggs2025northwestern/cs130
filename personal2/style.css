@@ -2,7 +2,7 @@
 
 document, body {
    margin: 0px;
-   font-family: 'Montserrat';
+   font-family: 'Rockwell';
 }
 
 body * {
@@ -84,7 +84,7 @@ button:hover {
 .pink header {
    background: #ff06f7;
    color: white;
-   font-family: 'Montserrat';
+   font-family: 'Rockwell';
    
 }
 .pink button {
